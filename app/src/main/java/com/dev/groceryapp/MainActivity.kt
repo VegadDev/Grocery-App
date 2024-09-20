@@ -1,5 +1,6 @@
 package com.dev.groceryapp
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -33,11 +34,14 @@ class MainActivity : ComponentActivity() {
       GroceryAppTheme {
         Surface(modifier = Modifier.fillMaxSize(), color = AppTheme.colors.surface) {
           GroceryApp()
+          //MainScreen()
         }
       }
     }
   }
 }
+
+
 
 @Composable
 fun GroceryApp(

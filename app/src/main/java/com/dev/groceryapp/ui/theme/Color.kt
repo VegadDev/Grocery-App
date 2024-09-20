@@ -54,21 +54,11 @@ data class AppColors(
   val attendanceStatusUnMark: Color,
   var backgroundColorOf:Color,
   var tintcolorbotton: Color,
-  var textfield_bg_color: Color,
-
-  val Bg_Color: Color,
-  val Text_Color: Color,
-  val Card_Bg_Color: Color,
-  val Button_Bg_Color: Color,
-  val google_bg_color: Color,
-  val logincard_bg_color: Color,
-  val staff_bg_color: Color,
-  val btn_border_color: Color,
-  val btn_text_color: Color,
-  val title_text_color: Color,
-  val home_bg_color: Color
-
-
+  var orange: Color,
+  var bg: Color,
+  var green: Color,
+  var darkblue: Color,
+  var lighttext: Color
 )
 
 val customAppColorsLight = AppColors(
@@ -124,27 +114,16 @@ val customAppColorsLight = AppColors(
   attendanceStatusUnMark = Color(0xE6B3B3B3),
   backgroundColorOf = Color(0xFF0B69FF),
   tintcolorbotton = Color(0xFFFAF5FF),
-
-
-  google_bg_color = Color(0xFF4285F5),
-  textfield_bg_color = Color(0xFFF3E8FF),
-
-  Bg_Color = Color(0xFF8D99AE),
-  Text_Color = Color(0xFF3E3E3E),
-  Card_Bg_Color = Color(0xFF8D99AE),
-   Button_Bg_Color = Color(0xFF356BCA),
-
-  logincard_bg_color = Color(0xFFF9F4FF),
-  staff_bg_color = Color(0xFFFEFEFE),
-   btn_border_color = Color(0xFF6101BD),
-  btn_text_color = Color(0xFF3A0073),
-  title_text_color = Color(0xFF1D1D1D) ,
-  home_bg_color = Color(0xFFF3E8FF)
+  orange = Color(0xFFFF8515),
+  bg = Color(0xFFf1f3f1),
+  green = Color(0xFF369b2b),
+  darkblue = Color(0xFF282C4B),
+  lighttext = Color(0xFFF0F8EF),
 )
 
 val customAppColorsDark = AppColors(
   primary = Color(0xFFA5C8FF),
-  onPrimary = Color(0xFF00315F),
+  onPrimary = Color(0xFFFAFAFA),
   primaryContainer = Color(0xFF004786),
   onPrimaryContainer = Color(0xFFD4E3FF),
   secondary = Color(0xFF292929),
@@ -195,18 +174,9 @@ val customAppColorsDark = AppColors(
   attendanceStatusUnMark = Color(0xE6424242),
   backgroundColorOf = Color(0xFF0B69FF),
   tintcolorbotton = Color(0xFF8D99AE),
-  Text_Color = Color(0xFF3E3E3E),
-  Card_Bg_Color = Color(0xFF8D99AE),
-  Button_Bg_Color = Color(0xFF356BCA),
-  google_bg_color = Color(0xFF4285F5),
-  logincard_bg_color = Color(0xFFF9F4FF),
-  staff_bg_color = Color(0xFFFEFEFE),
-  btn_border_color = Color(0xFF6101BD),
-  btn_text_color = Color(0xFF3A0073),
-  title_text_color = Color(0xFF1D1D1D) ,
-  home_bg_color = Color(0xFFF3E8FF),
-  textfield_bg_color = Color(0xFFF3E8FF),
-  Bg_Color = Color(0xFFF3E8FF)
-
-
+  orange = Color(0xFFFF8515),
+  bg = Color(0xFFf1f3f1),
+  green = Color(0xFF369b2b),
+  darkblue = Color(0xFF282C4B),
+  lighttext = Color(0xFFF0F8EF),
 )

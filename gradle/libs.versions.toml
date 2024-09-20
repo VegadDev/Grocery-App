@@ -4,7 +4,7 @@ kotlin = "1.9.10"
 core-ktx = "1.13.1"
 lifecycle-runtime-ktx = "2.8.1"
 activity-compose = "1.9.0"
-compose-bom = "2024.05.00"
+compose-bom = "2024.08.00"
 androidx-constraintlayout = "1.0.1"
 appcompat = "1.7.0"
 material = "1.12.0"
@@ -14,18 +14,16 @@ room = "2.6.1"
 hilt = "2.49"
 hilt-navigation = "1.2.0"
 ksp = "1.9.10-1.0.13"
-nav-version = "2.7.7"
+nav-version = "2.8.0-beta05"
 gson = "2.10.1"
 retrofit2 = "2.9.0"
 logging-intercepter = "5.0.0-alpha.3"
 lottie = "6.3.0"
 coil = "2.4.0"
-googleAuth = "21.2.0"
-google-services = "4.4.2"
-firebase-bom = "33.1.0"
-firebase-crashlytics = "3.0.1"
 easyImageCrop = "0.1.1"
 runtime-permission = "0.33.2-alpha"
+kotlinxSerializationJson = "1.6.3"
+kotlinxSerialization = "1.9.23"
 
 [libraries]
 androidx-material = { module = "androidx.compose.material:material", version.ref = "materialVersion" }
@@ -43,7 +41,6 @@ ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview
 ui-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "nav-version" }
 runtime-permission = { group = "com.google.accompanist", name = "accompanist-permissions", version.ref = "runtime-permission"}
 material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "material3" }
-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room"}
 room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
@@ -57,15 +54,8 @@ retrofit2-converter = { group = "com.squareup.retrofit2", name = "converter-gson
 logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "logging-intercepter"}
 lottie = { group = "com.airbnb.android", name = "lottie-compose", version.ref = "lottie" }
 coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
-googleAuth = { group = "com.google.android.gms", name= "play-services-auth", version.ref = "googleAuth" }
-firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebase-bom" }
-firebase-database = { group = "com.google.firebase", name = "firebase-database-ktx" }
-firebase-auth = { group = "com.google.firebase", name = "firebase-auth-ktx" }
-firebase-storage = { group = "com.google.firebase", name = "firebase-storage-ktx" }
-firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics-ktx" }
-firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics-ktx" }
-firebase-messaging = { group = "com.google.firebase", name = "firebase-messaging-ktx" }
 easyImageCrop = { group = "io.github.mr0xf00", name = "easycrop", version.ref ="easyImageCrop" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
@@ -74,7 +64,6 @@ androidLibrary = { id = "com.android.library", version.ref = "agp" }
 kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt"}
 kotlin-ksp = { id ="com.google.devtools.ksp", version.ref = "ksp" }
-googleAuthService = { id = "com.google.gms.google-services", version.ref = "google-services" }
-firebase-crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "firebase-crashlytics" }
+jetbrains-kotlin-serialization = { id ="org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlinxSerialization"}
 
 [bundles]

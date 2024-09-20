@@ -15,6 +15,7 @@ constructor(
 ) : ViewModel() {
 
   val interActor = object : SettingInterActor {
+
     override fun onBackPress() {
       navigator.navigate(NavigationCommand.Back)
     }

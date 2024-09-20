@@ -6,6 +6,7 @@ plugins {
     //alias(libs.plugins.googleAuthService)
     //alias(libs.plugins.firebase.crashlytics)
     alias(libs.plugins.kotlin.kapt)
+    alias(libs.plugins.jetbrains.kotlin.serialization)
 }
 
 android {
@@ -45,7 +46,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.3"
+        kotlinCompilerExtensionVersion = "1.5.11"
     }
     packaging {
         resources {
@@ -91,6 +92,9 @@ dependencies {
     implementation(libs.lottie)
     implementation(libs.coil)
     implementation(libs.easyImageCrop)
+
+    implementation("androidx.compose.material:material:1.4.2")
+    implementation(libs.kotlinx.serialization.json)
 
 //    implementation(platform(libs.firebase.bom))
 //    implementation(libs.firebase.database)

@@ -29,6 +29,14 @@ constructor(
       navigator.navigate(NavigationCommand.To(AppScreens.SettingScreen.route))
     }
 
+    override fun gotoHome() {
+      navigator.navigate(NavigationCommand.To(AppScreens.DashboardScreen.route))
+    }
+
+    override fun gotoProfile() {
+      navigator.navigate(NavigationCommand.To(AppScreens.ProfileScreen.route))
+    }
+
   }
 
   init {
